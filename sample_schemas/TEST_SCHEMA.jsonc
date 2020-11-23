@@ -1,0 +1,15 @@
+{
+  "name": "String",
+  "positive": [
+    "ConditionSchema"
+  ],
+  "description": [
+    "String",
+    "String",
+    "String"
+  ], // an array of strings where each string is a different step in how to perform the test.
+  "bibliography": [
+    "String",
+    "String"
+  ] // each string is a book reference (google "how to quote bibliography")
+}

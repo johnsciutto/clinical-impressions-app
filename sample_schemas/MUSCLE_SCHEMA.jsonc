@@ -1,0 +1,32 @@
+{
+  "name": "String",
+  "fibre_direction": "String",
+  "origin": [
+    {
+      "bone": "BoneSchema",
+      "attachment": "String"
+    }
+  ],
+  "insertion": [
+    {
+      "bone": "BoneSchema",
+      "attachment": "String"
+    }
+  ],
+  "actions": {
+    "primary": [
+      "String",
+      "String"
+    ],
+    "secondary": [
+      "String",
+      "String"
+    ]
+  },
+  "innervation": [
+    "String"
+  ],
+  "blood_supply": [
+    "String"
+  ]
+}
