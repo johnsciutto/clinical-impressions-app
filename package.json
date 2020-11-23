@@ -1,0 +1,19 @@
+{
+  "name": "clinical_impressions_app",
+  "version": "1.0.0",
+  "description": "An application to help massage therapists and other related body workers to reach a clinical impression based on the present condition of a client.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnsciutto/clinical-impressions-app.git"
+  },
+  "author": "johnsciutto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnsciutto/clinical-impressions-app/issues"
+  },
+  "homepage": "https://github.com/johnsciutto/clinical-impressions-app#readme"
+}
