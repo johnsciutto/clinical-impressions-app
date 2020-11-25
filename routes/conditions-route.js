@@ -1,5 +1,5 @@
 const express = require('express');
-const { Condition } = require('../db');
+const { Condition } = require('../mongodb-interface');
 
 module.exports = (app) => {
   app.use(express.urlencoded({ extended: true }));

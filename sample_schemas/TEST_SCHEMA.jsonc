@@ -1,8 +1,6 @@
 {
   "name": "String",
-  "positive": [
-    "ConditionSchema"
-  ],
+  "positive": "String",
   "description": [ // an array of strings where each string is a different step in how to perform the test.
     "String",
     "String",

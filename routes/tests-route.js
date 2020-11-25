@@ -1,5 +1,5 @@
 const express = require('express');
-const { Test } = require('../db');
+const { Test } = require('../mongodb-interface');
 
 module.exports = (app) => {
   app.use(express.urlencoded({ extended: true }));
@@ -14,11 +14,7 @@ module.exports = (app) => {
 
     .post(async (req, res) => {
       const { body } = req;
-      const positiveTestsArray = body.positive_tests.split(';');
-      const result = await Test.add({
-        ...body,
-        positive_tests: positiveTestsArray,
-      });
+      const result = await Test.add(body);
       res.send(result.ops[0]._id);
     });
 
