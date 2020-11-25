@@ -3,13 +3,28 @@
   "positive": [
     "ConditionSchema"
   ],
-  "description": [
+  "description": [ // an array of strings where each string is a different step in how to perform the test.
     "String",
     "String",
     "String"
-  ], // an array of strings where each string is a different step in how to perform the test.
-  "bibliography": [
+  ],
+  "sensitivity": {
+    "String": "Percentage"
+  },
+  "specificity": {
+    "String": "Percentage"
+  },
+  "reliability": {
+    "String": "Number"
+  },
+  "likelihood": {
+    "String": { // ie: pain / thud
+      "positive": "Number",
+      "negative": "Number"
+    }
+  },
+  "bibliography": [ // each string is a book reference (google "how to quote bibliography")
     "String",
     "String"
-  ] // each string is a book reference (google "how to quote bibliography")
+  ]
 }

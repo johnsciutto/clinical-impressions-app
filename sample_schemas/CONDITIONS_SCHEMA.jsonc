@@ -2,34 +2,36 @@
   "name": "String",
   "alias": "String",
   "description": "String",
-  "structures_affected": [
-    "MuscleSchema",
-    "BoneSchema",
-    "LigamentSchema"
-  ],
+  //* Maybe include this part later, for now, it's not necessary.
+  // "structures_affected": [ 
+  //   "MuscleSchema",
+  //   "BoneSchema",
+  //   "LigamentSchema"
+  // ],
   "positive_tests": [
     "TestSchema",
     "TestSchema"
-  ], // at least 2 in every condition.
-  "treatment": {
-    "mt": {
-      "acute": {
-        "hydrotherapy": "String",
-        "description": "String"
-      },
-      "subacute": {
-        "hydrotherapy": "String",
-        "description": "String"
-      },
-      "chronic": {
-        "hydrotherapy": "String",
-        "description": "String"
-      }
-    }
-  },
-  "remex": {
-    "acute": "String", // ? Do I need this to be more than a simple string?
-    "subacute": "String",
-    "chronic": "String"
-  }
+  ] // at least 2 in every condition.
+  //* Maybe include this part later, for now, it's not necessary.
+  // "treatment": {
+  //   "mt": {
+  //     "acute": {
+  //       "hydrotherapy": "String",
+  //       "description": "String"
+  //     },
+  //     "subacute": {
+  //       "hydrotherapy": "String",
+  //       "description": "String"
+  //     },
+  //     "chronic": {
+  //       "hydrotherapy": "String",
+  //       "description": "String"
+  //     }
+  //   }
+  // },
+  // "remex": {
+  //   "acute": "String", // ? Do I need this to be more than a simple string?
+  //   "subacute": "String",
+  //   "chronic": "String"
+  // }
 }
