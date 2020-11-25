@@ -4,7 +4,7 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-const PORT = process.env.PORT || 2000;
+const PORT = process.env.PORT || 3000;
 
 const ConditionsAPI = express.Router();
 require('./routes/conditions-route')(ConditionsAPI);
