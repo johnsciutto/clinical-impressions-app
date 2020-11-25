@@ -8,7 +8,7 @@ const {
   COND_COLLECTION,
 } = process.env;
 
-class DBInterface {
+class DatabaseInterface {
   constructor(collectionName) {
     this.collectionName = collectionName;
     this.Schema = this.createSchema();
@@ -77,7 +77,7 @@ class DBInterface {
     try {
       const { client, collection } = await this.initiateDBConnection();
       let result;
-      if (!DBInterface.isValidId(name)) {
+      if (!DatabaseInterface.isValidId(name)) {
         result = await collection.findOne({ $text: { $search: name } });
       } else {
         result = await collection.findOne({ _id: ObjectId(name) });
@@ -92,7 +92,7 @@ class DBInterface {
 
   async change(id, changes) {
     try {
-      if (!DBInterface.isValidId(id)) throw new Error('Given argument is not a valid ID');
+      if (!DatabaseInterface.isValidId(id)) throw new Error('Given argument is not a valid ID');
       const { client, collection } = await this.initiateDBConnection();
       const { result } = await collection.updateOne({ _id: ObjectId(id) }, changes);
       await client.close();
@@ -125,7 +125,7 @@ class DBInterface {
   }
 }
 
-const ConditionCollection = new DBInterface(COND_COLLECTION);
-const TestCollection = new DBInterface(TEST_COLLECTION);
+const Condition = new DatabaseInterface(COND_COLLECTION);
+const Test = new DatabaseInterface(TEST_COLLECTION);
 
-module.exports = { Condition: ConditionCollection, Test: TestCollection };
+module.exports = { Condition, Test };
